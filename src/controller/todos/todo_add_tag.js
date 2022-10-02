@@ -12,5 +12,6 @@ export async function addTagToTodoHandler(ctx) {
         ctx.throw(400, {'error': 'Todo id or Tag id cannot be found'});
     }
   
-    ctx.status = 204;
+    ctx.status = 200;
+    ctx.body = {}
   }
