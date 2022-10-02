@@ -10,4 +10,4 @@ node todo-app.js
 
 ## Tests
 
-You can run validate the application with http://www.todobackend.com/specs/.
+You can run validate the application with [http://todospecs.thing.zone/index.html?https://todo.ponnudurai.ch](http://todospecs.thing.zone/index.html?https://todo.ponnudurai.ch)
