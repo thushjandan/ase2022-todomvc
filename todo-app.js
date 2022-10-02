@@ -65,7 +65,7 @@ const start = async() => {
     process.exit(1);
   }
 
-  app.listen(8080);
+  app.listen(process.env.PORT || 8080);
 }
 // Start server
 start();
