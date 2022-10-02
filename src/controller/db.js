@@ -22,15 +22,15 @@ export function createTodo(todo) {
 }
 
 export function listTodos() {
-    return TodoModel.find().populate({path: "tags", select: selectTagFields}).select(selectTodoFields);
+    return TodoModel.find().populate({path: "tags", select: selectTagFields}).select(selectTodoFields).lean();
 }
 
 export function findTodoById(id)  {
-    return TodoModel.findOne({id: id}).populate({path: "tags", select: selectTagFields}).select(selectTodoFields);
+    return TodoModel.findOne({id: id}).populate({path: "tags", select: selectTagFields}).select(selectTodoFields).lean();
 }
 
 export function updateTodo(id, todo) {
-    return TodoModel.findOneAndUpdate({id: id}, todo, {new: true}).select(selectTodoFields);
+    return TodoModel.findOneAndUpdate({id: id}, todo, {new: true}).select(selectTodoFields).lean();
 }
 
 export function deleteTodo(todoId) {
@@ -48,15 +48,15 @@ export function createTag(tag) {
 }
 
 export function listTags() {
-    return TagModel.find().populate({path: "todos", select: selectTodoFields}).select(selectTagFields);
+    return TagModel.find().populate({path: "todos", select: selectTodoFields}).select(selectTagFields).lean();
 }
 
 export function findTagById(id)  {
-    return TagModel.findOne({id: id}).populate({path: "todos", select: selectTodoFields}).select(selectTagFields);
+    return TagModel.findOne({id: id}).populate({path: "todos", select: selectTodoFields}).select(selectTagFields).lean();
 }
 
 export function updateTag(id, tag) {
-    return TagModel.findOneAndUpdate({id: id}, tag, {new: true}).select(selectTagFields);
+    return TagModel.findOneAndUpdate({id: id}, tag, {new: true}).select(selectTagFields).lean();
 }
 
 export function deleteTag(id) {
