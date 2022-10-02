@@ -1,0 +1,28 @@
+{
+  "name": "todo-backend-node-koa",
+  "version": "0.0.9",
+  "description": "",
+  "main": "todo-app.js",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DurandA/todo-backend-node-koa.git"
+  },
+  "author": "Arnaud Durand",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DurandA/todo-backend-node-koa/issues"
+  },
+  "homepage": "https://github.com/DurandA/todo-backend-node-koa#readme",
+  "dependencies": {
+    "@koa/cors": "^2.2.2",
+    "dotenv": "^16.0.3",
+    "koa": "^2.13.4",
+    "koa-bodyparser": "^4.3.0",
+    "koa-cors": "^0.0.16",
+    "koa-router": "^12.0.0",
+    "mongodb": "4.10",
+    "mongoose": "^6.6.3",
+    "mongoose-sequence": "^5.3.1"
+  }
+}
